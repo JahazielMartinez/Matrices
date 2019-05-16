@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Matrices</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="companyName">C M V</string>
+    <string name="menu">Menú</string>
+    <string name="owners">Martinez Lorenzo Jahaziel</string>
+    <string name="sistemaEcuaciones">Sistema De Ecuaciones</string>
+    <string name="matrices">Matrices</string>
+    <string name="dimension2">2 x 2</string>
+    <string name="dimension3">3 x 3</string>
+    <string name="determinantes">Determinantes</string>
+    <string name="inversa">Inversa Matriz</string>
+    <string name="det_dos_dos">2 x 2</string>
+    <string name="det_tres_x_tres">3 x 3</string>
+    <string name="det_cuatro_x_cuatro">4 x 4</string>
+    <string name="calcularEcuacion">Calcular Ecuación</string>
+    <string name="numero">5</string>
+    <string name="variable">X</string>
+    <string name="variableY">Y</string>
+    <string name="igual">=</string>
+    <string name="calculandoX">X</string>
+    <string name="calculandoY">Y</string>
+    <string name="limpiarCampos">Limpiar Campos</string>
+    <string name="Cero">0</string>
+    <string name="uno">1</string>
+    <string name="calculandoZ">Z</string>
+    <string name="CorcheteAbierto">CocheteAbierto</string>
+    <string name="Determinate">|A|</string>
+    <string name="inv">A¯¹</string>
+    <string name="invText">Inversa</string>
+    <string name="invText2x2">2 x 2</string>
+    <string name="invText3x3">3 x 3</string>
+    <string name="invText4x4">4 x 4</string>
+    <string name="guionBajo">_____</string>
+    <string name="adjunta_a">Adjunta A</string>
+    <string name="transpuesta">Transpuesta</string>
+    <string name="guionBajo1">-----</string>
+    <string name="ingresar">Ingresa los datos</string>
+</resources>

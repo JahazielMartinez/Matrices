@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40968A"
+    android:gravity="center"
+    tools:context=".Matrices">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bceducation_1" />
+
+    <LinearLayout
+        android:id="@+id/llmatriz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/determinantes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="determinates"
+            android:text="@string/determinantes" />
+
+        <Button
+            android:id="@+id/inversa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="inversa"
+            android:text="@string/inversa" />
+
+    </LinearLayout>
+</RelativeLayout>

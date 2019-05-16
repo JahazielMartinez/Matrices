@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jahazielmartinez.matrices">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_principal"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_principal"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActividades"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".Ecuaciones"
+            android:parentActivityName=".MenuActividades"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".Matrices"
+            android:parentActivityName=".MenuActividades"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".SistemaEcuaciones2x2"
+            android:parentActivityName=".Matrices"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".SistemaEcuaciones3x3"
+            android:parentActivityName=".Matrices"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".Determinantes"
+            android:parentActivityName=".Matrices"
+            tools:targetApi="jelly_bean" />
+        <activity android:name=".InversaMatriz_2x2"
+            android:parentActivityName=".InversaMatrizMenu"/>
+        <activity
+            android:name=".InversaMatriz_3x3"
+            android:parentActivityName=".InversaMatrizMenu"
+            tools:targetApi="jelly_bean" />
+        <activity android:name=".InversaMatriz_4x4"
+            android:parentActivityName=".InversaMatrizMenu"/>
+        <activity android:name=".InversaMatrizMenu"
+            android:parentActivityName=".Matrices"/>
+        <activity
+            android:name=".Det_2x2"
+            android:parentActivityName=".Determinantes"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".Det_3x3"
+            android:parentActivityName=".Determinantes"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".Det_4x4"
+            android:parentActivityName=".Determinantes" />
+    </application>
+
+</manifest>

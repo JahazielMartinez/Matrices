@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context=".SistemaEcuaciones2x2">
+
+    <LinearLayout
+        android:id="@+id/llSisEcuUno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/valorX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:hint="@string/Cero"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberSigned"
+            android:singleLine="true"
+            android:textColor="@color/textHint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/variable"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/valorY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/Cero"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberSigned"
+            android:textColor="@color/textHint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/variableY"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/igual"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/valorUno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:hint="@string/Cero"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberSigned"
+            android:textColor="@color/textHint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSisEcuDos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llSisEcuUno"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/valorX1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/Cero"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberSigned"
+            android:textColor="@color/textHint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/variable"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/valorY2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/Cero"
+            android:imeOptions="actionNext"
+            android:inputType="number|numberSigned"
+            android:textColor="@color/textHint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/variableY"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/igual"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/valorDos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:hint="@string/Cero"
+            android:imeOptions="actionDone"
+            android:inputType="number|numberSigned"
+            android:textColor="@color/textHint" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calcularEcuacionX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llSisEcuDos"
+        android:layout_marginTop="100dp"
+        android:onClick="botonX"
+        android:text="@string/calculandoX" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calcularEcuacionX"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="95dp"
+        android:layout_marginStart="95dp"
+        android:text="@string/igual" />
+
+    <TextView
+        android:id="@+id/textResultadoX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/calcularEcuacionX"
+        android:layout_marginLeft="110dp"
+        android:layout_marginStart="110dp"
+        android:hint="@string/Cero"
+        android:text="@string/Cero"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/calcularEcuacionY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/calcularEcuacionX"
+        android:onClick="botonY"
+        android:text="@string/calculandoY" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calcularEcuacionY"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_toEndOf="@+id/calcularEcuacionX"
+        android:layout_toRightOf="@+id/calcularEcuacionX"
+        android:text="@string/igual" />
+
+    <TextView
+        android:id="@+id/textResultadoY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/calcularEcuacionY"
+        android:layout_alignLeft="@+id/textResultadoX"
+        android:layout_alignStart="@+id/textResultadoX"
+        android:hint="@string/Cero"
+        android:text="@string/Cero"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/limCamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textResultadoY"
+        android:layout_marginTop="40dp"
+        android:text="@string/limpiarCampos" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="127dp"
+        android:layout_height="156dp"
+        android:layout_above="@+id/textResultadoY"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-48dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#FFC66B03"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/limCamp"
+        app:layout_constraintVertical_bias="1.0"
+        app:lottie_fileName="trophy.json"
+        app:lottie_imageAssetsFolder="assets" />
+
+</RelativeLayout>
